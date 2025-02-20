@@ -1,0 +1,331 @@
+/* Full-page background */
+
+.home-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../Images/img1.jpg') no-repeat center center;
+    background-size: cover;
+    background-size: cover;
+    width: 100%;
+    /* Ensure the image covers the viewport */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    margin-top: -1px;
+    /* No image repeat */
+    min-height: 100vh;
+    /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+    color: #fff;
+    /* Text color for better contrast */
+    text-align: center;
+    /* Center-align text */
+}
+
+
+/* Content styling */
+
+.home-content {
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black background for text */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+/* Title styling */
+
+.home-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* Description styling */
+
+.home-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+/* Button styling */
+
+.learn-more-button {
+    background-color: #f38e09;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.learn-more-button:hover {
+    background-color: #f38e09;
+    transform: scale(1.05);
+}
+
+
+/* Fade-in animation */
+
+.learn-btn {
+    text-decoration: none;
+    color: white;
+}
+
+.learn-btn:hover {
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Info Section */
+
+.info-section {
+    background-color: #f8f9fa;
+}
+
+.info-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.info-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.info-list {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.info-list li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+
+/* Add smooth transitions for images */
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+    /* Slight zoom effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    /* Adds a shadow on hover */
+}
+
+
+/* Marquee container */
+
+
+/* Marquee Section */
+
+
+/* Marquee container styling */
+
+.marquee-container {
+    background-color: white;
+    /* Green background */
+    color: black;
+    /* White text */
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 100;
+    overflow: hidden;
+    /* Hide overflow content */
+    white-space: nowrap;
+    /* Prevent text wrapping */
+    position: relative;
+}
+
+
+/* Inner marquee content */
+
+.marquee {
+    display: flex;
+    /* Use flexbox for continuous scrolling */
+    width: max-content;
+    /* Ensure the content can stretch beyond its container */
+    animation: marquee-scroll 30s linear infinite;
+    /* Smooth scrolling animation */
+}
+
+
+/* Keyframes for continuous scrolling */
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0);
+        /* Start at initial position */
+    }
+    100% {
+        transform: translateX(-100%);
+        /* Move left by one full width */
+    }
+}
+
+
+/* Custom styles for Image Cards Section */
+
+.image-cards-section {
+    background-color: #343a40;
+    /* Dark background color */
+}
+
+.card {
+    border: none;
+    /* Remove card border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Slightly lift the card on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Add shadow on hover */
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    /* Make sure the image covers the space */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.home1 {
+    max-width: 800px;
+    /* Limit the width for better readability */
+    margin: 20px auto;
+    /* Center-align the div */
+    padding: 20px;
+    /* Add padding for inner space */
+    background-color: #f9f9f9;
+    /* Light background for contrast */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
+    line-height: 1.6;
+    /* Increase line height for better readability */
+}
+
+
+/* Style for the paragraph text */
+
+.home1 p {
+    font-size: 18px;
+    /* Set font size */
+    color: #333;
+    /* Dark gray color for text */
+    /* Set font family */
+    text-align: justify;
+    /* Justify text for a neat look */
+    margin-bottom: 20px;
+    /* Space below the paragraph */
+}
+
+@media screen and (max-width:368px) {
+    .home-background {
+        width: 100%;
+        height: 60%;
+    }
+}
+
+
+/* Container for the volunteer description */
+
+.volunteer-description-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+
+/* Heading Styling */
+
+.volunteer-description-container h2 {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+/* Paragraph Styling */
+
+.volunteer-description-container p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* Add a button for volunteering call to action */
+
+.volunteer-description-container .cta-btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.volunteer-description-container .cta-btn:hover {
+    background-color: #45a049;
+}

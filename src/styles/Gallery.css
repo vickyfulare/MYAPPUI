@@ -1,0 +1,67 @@
+.gallery-container {
+    text-align: center;
+}
+
+.gallery-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4caf50;
+    /* Customize color */
+}
+
+.gallery-description {
+    font-size: 1.2rem;
+    color: #555;
+    /* Customize text color */
+}
+
+.card {
+    border: none;
+    /* Remove default card border */
+    overflow: hidden;
+    /* Ensure no content spills outside */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Subtle lift effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    /* Add shadow on hover */
+}
+
+.card-img-top {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05);
+    /* Slight zoom effect */
+    filter: brightness(0.9);
+    /* Darken the image slightly */
+}
+
+.card-body {
+    background-color: #f9f9f9;
+    /* Light background for captions */
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.card-body:hover {
+    background-color: #f1f1f1;
+    /* Subtle highlight on hover */
+}
+
+.image-caption {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+    /* Customize text color */
+    margin: 0;
+}
+
+.card-date {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
