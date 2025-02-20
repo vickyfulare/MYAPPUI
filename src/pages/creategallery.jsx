@@ -3,7 +3,7 @@ import axios from "axios";
 import Layout from "../components/Layout/Layout";
 import { useNavigate } from "react-router-dom";
 import "../styles/Creategallery.css";
-
+import { API_URL } from "../config";
 const Creategallery = () => {
   const [gname, setGname] = useState("");
   const [date, setDate] = useState("");
@@ -36,11 +36,9 @@ const Creategallery = () => {
     formData.append("g_image", file);
 
     try {
-      await axios.post(
-        "https://renderproject-rflr.onrender.com/api/v1/gallery/create-gallery",
-        formData,
-        { headers: { "Content-Type": "multipart/form-data" } }
-      );
+      await axios.post(`${API_URL}/api/v1/gallery/create-gallery`, formData, {
+        headers: { "Content-Type": "multipart/form-data" },
+      });
       setMessage("Gallery item uploaded successfully!");
       setGname("");
       setDate("");

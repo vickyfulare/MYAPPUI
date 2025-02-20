@@ -6,6 +6,7 @@ import "../styles/Gallery.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Modal, Button } from "react-bootstrap";
+import { API_URL } from "../config";
 
 function Gallery() {
   const [gallery, setGallery] = useState([]);
@@ -25,7 +26,7 @@ function Gallery() {
     const fetchGalleryData = async () => {
       try {
         const response = await axios.get(
-          "https://renderproject-rflr.onrender.com/api/v1/gallery/get-gallery"
+          `${API_URL}/api/v1/gallery/get-gallery`
         );
         setGallery(response.data.reverse());
       } catch (err) {
@@ -121,7 +122,7 @@ function Gallery() {
             <div className="col-12 col-sm-6 col-md-3 col-lg-4" key={image._id}>
               <div className="card shadow-sm h-100 position-relative">
                 <img
-                  src={`https://renderproject-rflr.onrender.com/${image.g_image}`}
+                  src={`${API_URL}/${image.g_image}`}
                   className="card-img-top"
                   alt={image.gname}
                   style={{ width: "100%", height: "45vh", cursor: "pointer" }}
