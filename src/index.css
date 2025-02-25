@@ -1,0 +1,126 @@
+/* Full height layout for footer adjustment */
+
+
+/* Link these fonts in your HTML or import via CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap');
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: #c5d1b5;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+    font-family: Poppins, sans-serif;
+}
+
+* {
+    font-family: Poppins, sans-serif;
+}
+
+h6,
+h5,
+p {
+    font-weight: 500px !important;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 140vh;
+    text-align: center;
+    background: #D3CCE3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 50px;
+}
+
+.content {
+    flex: 1;
+    /* Grow and fill the remaining space */
+    padding: 0px;
+    /* Add padding for spacing */
+}
+
+footer {
+    text-align: center;
+    background-color: #fa4848;
+    color: white;
+    padding: 10px 0;
+}
+
+.nav-link {
+    color: #333;
+    /* Default link color */
+    text-decoration: none;
+    padding-bottom: 3px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-link:hover {
+    color: #5f7b99;
+    /* Hover color */
+}
+
+.active-link {
+    color: #0b0c0c !important;
+    /* Active link color */
+    border-bottom: 1px solid #222a33 !important;
+    /* Bottom border */
+}
+
+
+/* Hover effect for social media icons */
+
+footer .bi {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer .bi:hover {
+    color: #ff9800;
+    /* Change this color to match your design */
+}
+
+
+/* Custom styling for active link */
+
+.active-link {
+    /* Adjust to your desired active link color */
+    border-bottom: 2px solid #007bff;
+    /* Adds a border under the active link */
+}
+
+
+/* Customize the navbar color if needed */
+
+.bgimage {
+    /* Use public folder path */
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 568px) {
+    * {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:468px) {
+    .home-background {
+        width: 100%;
+        height: 100%;
+    }
+}
